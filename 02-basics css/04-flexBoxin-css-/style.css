@@ -1,0 +1,44 @@
+h1{
+    background-color: aquamarine;
+    text-align: center;
+}
+.div{
+    width: 350px;
+    height: 340px;
+}
+
+.div1{
+     background-color: aquamarine; margin-top: 10px;
+     margin-left: 10px;  
+     /* text-align: justify;
+     letter-spacing: 1px;
+ */
+}
+
+.div2{
+    background-color: bisque;
+    margin-top: 25%;
+}
+
+.div3{
+    background-color: blueviolet;
+    margin-top: 50%;
+  
+}
+.flexbox{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    height: auto;
+    background-color: burlywood;
+}
+
+h4{
+ text-align: center;
+ text-decoration: underline;
+}
+p{
+    text-align: center;
+}
