@@ -1,0 +1,69 @@
+main{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --color1:  #cdb4db;
+    --color2:  #ffc8dd;
+    --color3:  #ffafcc;
+    --color4:  #bde0fe;
+    --color5:  #a2d2ff;
+}
+
+.palette-card{
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #ededee;
+}
+
+.color-wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.div{
+    /* width: 70px; */
+    height: 100px;
+}
+
+ .color-wrapper :nth-child(1){
+    background-color: var(--color1);
+}
+
+ .color-wrapper :nth-child(2){
+    background-color: var(--color2);
+}
+
+ .color-wrapper :nth-child(3){
+    background-color: var(--color3);
+}
+
+ .color-wrapper :nth-child(4){
+    background-color: var(--color4);
+}
+
+.color-wrapper :nth-child(5){
+    background-color: var(--color5);
+}
+
+.color-wrapper > div:hover{
+    width: 100px;
+    flex-grow: 3;
+}
+
+.color-wrapper div:not(:hover) {
+   /* Decrease width for non-hovered colors */
+   width: 80px; 
+   /* Smooth transition for shrinking */
+   transition: width 0.2s ease-in-out;
+  }
