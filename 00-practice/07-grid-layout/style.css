@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  
+  :root {
+    --color1: #ffbd00;
+    --color2: #ff5400;
+    --color3: #ff0054;
+    --color4: #9e0059;
+    --color5: #390099;
+  }
+  
+  html,
+  body {
+    font-size: calc(10px + 1vmin);
+    height: 100%;
+  }
+  
+  body {
+    padding: 2rem;
+  }
+  
+  main.grid-container {
+    width: 100%;
+    display: grid;
+    background: #464646;
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+ 
+  }
+  
+  main.grid-container > article:nth-child(1) {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  main.grid-container > article img {
+    width: 100%;
+    display: inline-block;
+  }
+  
+  @media screen and (max-width: 800px) {
+    /* main.grid-container {
+      grid-template-columns: 100%;
+    }
+   */
+    main.grid-container > article:nth-child(2) {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        align-items: center;
+      }
+
+      main.grid-container > article:nth-child(3) {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        align-items: center;
+      }
+
+      main.grid-container > article:nth-child(4) {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        align-items: center;
+      }
+    
+  }
+/*   
+  @media screen and (max-width: 800px){
+    main.grid-container > article:nth-child(2) {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        align-items: center;
+      }
+
+      main.grid-container > article:nth-child(3) {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        align-items: center;
+      }
+
+      main.grid-container > article:nth-child(4) {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        align-items: center;
+      }
+      
+  } */
