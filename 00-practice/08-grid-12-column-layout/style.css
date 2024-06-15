@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  
+  :root {
+    --color1: #ffbd00;
+    --color2: #ff5400;
+    --color3: #ff0054;
+    --color4: #9e0059;
+    --color5: #390099;
+  }
+  
+  html,
+  body {
+    font-size: calc(10px + 1vmin);
+    height: 100%;
+  }
+  
+  body {
+    padding: 2rem;
+  }
+  
+  main.grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background: #e2d7d7;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.6rem;
+  }
+
+  main.grid-container > nav.grid-navbar{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: aqua;
+    grid-column: span 12;
+  }
+  nav.grid-navbar> div.logo {
+    /* display: grid; */
+    display: inline-block;
+    align-items: center;
+    grid-column: span 2;
+    font-size: 1.5rem;
+}
+
+nav.grid-navbar> div.logo img {
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav.grid-navbar> div.nav-links {
+  display: flex;
+  grid-column: span 7;
+}
+
+nav.grid-navbar> div.nav-links a {
+  color: #070606;
+  text-decoration : none;
+  padding: 2px;
+  margin: auto;
+}
+
+nav.grid-navbar > div.auth-buttons {
+  display: flex;
+  /* justify-content: flex-end; */
+  /* display: inline-block; */
+  justify-content: center;
+  gap: 1rem;
+  grid-column: span 3;
+}
+
+button {
+  width: 100px;
+  background-color: #26475e; /* Green */
+  border: none;
+  color: white;
+  /* padding: 5px 10px; */
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main.grid-container > main.grid-content {
+  /* display: grid; */
+  background-color: hsl(310, 74%, 67%);
+  grid-column: span 12;
+  margin: auto;
+  }
+  
+  main.grid-container > main.grid-content p{
+    width: 1200px;
+    margin: auto;
+    
+}
+
+
+main.grid-container > footer.grid-footer {
+  background-color: #e5ec7b;
+  padding: 20px;
+  text-align: center;
+  grid-column: span 12;
+}
+
+main.grid-container > footer.grid-footer ul.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+main.grid-container > footer.grid-footer ul.social-links li {
+  margin-right: 10px;
+}
+
+main.grid-container > footer.grid-footer ul.social-links li > a {
+  color: #000;
+  text-decoration: none;
+}
+
+main.grid-container > footer.grid-footer ul.social-links li > a:hover {
+  text-decoration: underline;
+}
