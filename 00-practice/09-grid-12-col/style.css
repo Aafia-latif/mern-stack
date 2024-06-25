@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  
+  :root {
+    --color1: #ffbd00;
+    --color2: #ff5400;
+    --color3: #ff0054;
+    --color4: #9e0059;
+    --color5: #390099;
+  }
+  
+  html,
+  body {
+    font-size: calc(10px + 1vmin);
+    height: 100%;
+  }
+  
+  /* body {
+    padding: 2rem;
+  } */
+  
+/*  
+    width: 100%;
+    height: 80vh; */
+    /* display: grid; */
+    /* background: #e2d7d7; */
+    /* grid-template-columns: repeat(12, 1fr); */
+    /* gap: 0.6rem;
+  } */
+
+  nav.grid-navbar{
+    width: 100%;
+    height: 7%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: #ffffffee;
+    grid-column: span 12;
+    position: sticky;
+    top: 0%;
+  }
+  nav.grid-navbar> div.logo {
+    /* display: grid; */
+    padding: 0.4rem;
+    display: inline-block;
+    align-items: center;
+    grid-column: span 2;
+    font-size: 1.5rem;
+    color: #390099;
+}
+
+nav.grid-navbar > div.logo > i,h6{
+  font-size: large;
+}
+/* 
+nav.grid-navbar> div.logo img {
+    width: auto;
+    height: 80px;
+    margin-left : 50px;
+    background: transparent;
+} */
+
+nav.grid-navbar> div.nav-links {
+  display: flex;
+  grid-column: span 7;
+}
+
+nav.grid-navbar> div.nav-links a {
+  color: #070606;
+  text-decoration : none;
+  padding: 2px;
+  margin: auto;
+}
+
+nav.grid-navbar > div.auth-buttons {
+  display: flex;
+  /* justify-content: flex-end; */
+  /* display: inline-block; */
+  justify-content: center;
+  gap: 1rem;
+  grid-column: span 3;
+}
+
+button {
+  width: 100px;
+  background-color: #390099; 
+  border: none;
+  color: white;
+  /* padding: 5px 10px; */
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+div.hero-section{
+  
+  width: 100%;
+  height: 70vh;
+  background-image: url(https://thomasdigital.com/wp-content/uploads/2021/12/construction-websites-banner-scaled.jpg);
+  background-size: cover;
+  background-position: center 10%;
+  overflow: hidden;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* align-items: center; */
+  font-size: xx-large;
+  gap: 0.7rem;
+  /* color: #390099; */
+  color: #ffffff;
+  /* color: #000000; */
+}
+
+/* div.hero-section > img{
+  width: 100%;
+  height: 5%;
+  background-size: cover;
+  background-position: center;
+} */
+
+div.services-section{
+  width: 800px;
+  margin: auto;
+   
+}
+
+div.services-section > h1{
+  margin: 20px;
+  text-align: center;
+}
+
+div.services-section > div.service-cards{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+
+
+div.service-cards > div.card{
+  grid-column: span 4;
+}
+
+div.service-cards > div.card > p, h3, div.img-wrapper{
+  margin-bottom: 10px;
+}
+
+div.service-cards > div.card > div.img-wrapper{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+div.service-cards > div.card > div.img-wrapper > img{
+  width: 90%;
+  height: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+  right:2rem;
+  bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.cta-buttons button{
+  border-radius: 3rem;
+  padding:0.4rem 0.9rem;
+   
+}
+
+.cta-buttons button.learn-more{
+  background: transparent;
+  color: #390099;
+
+}
+
+
+/* div.service-cards > div.card2{
+  grid-column: span 4;
+}
+
+div.service-cards > div.card3{
+  grid-column: span 4;
+} */
+
+footer.grid-footer {
+ margin-top: 10px;
+  background-color: #390099 ;
+  padding: 15px;
+  text-align: center;
+  grid-column: span 12;
+}
+
+footer.grid-footer ul.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer.grid-footer > p{
+  color: #ffffff;
+}
+
+footer.grid-footer ul.social-links li {
+  margin-right: 10px;
+}
+
+footer.grid-footer ul.social-links li > a > i {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer.grid-footer ul.social-links li > a > i:hover {
+  text-decoration: underline;
+}
