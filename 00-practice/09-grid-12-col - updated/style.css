@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  
+  :root {
+    --color1: #ffbd00;
+    --color2: #ff5400;
+    --color3: #ff0054;
+    --color4: #9e0059;
+    --color5: #390099;
+    --color6: #ffffffee;
+    --color7: #070606;
+    --color8: #ffffff;
+
+    --font-size-small: 1.2rem;
+    --font-size-base: 1.7rem; 
+    --font-size-large: 2rem;
+  }
+  
+ 
+
+  html,
+  body {
+    font-size: calc(10px + 1vmin);
+    height: 100%;
+  }
+
+
+  .intro-title{
+    font-size: var(--font-size-large);
+  }
+  
+  .subtitle1{
+    font-size: var(--font-size-base) ;
+  }
+
+  .subtitle2{
+    font-size: var(--font-size-small) ;
+    line-height: 130%;
+    letter-spacing: 0.02rem;
+
+  }
+
+   a,button,i,span,img{
+    display: inline-block;
+   }
+
+  nav.grid-navbar{
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: var(--color6);
+    grid-column: span 12;
+    position: sticky;
+    top: 0%;
+  }
+  nav.grid-navbar> div.logo {
+    /* display: grid; */
+    padding: 0.4rem;
+    display: inline-block;
+    align-items: center;
+    grid-column: span 2;
+    /* font-size: 1.5rem; */
+    font-size: var(--font-size-small);
+    color: var(--color5);
+}
+
+nav.grid-navbar> div.nav-links {
+  display: flex;
+  grid-column: span 9;
+  
+}
+
+nav.grid-navbar> div.nav-links a{
+  width: 100px;
+  background-color: var(--color5); 
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin: auto;
+  color: var(--color8);
+
+}
+
+nav.grid-navbar> div.nav-links a:hover {
+  text-decoration: underline;
+}
+
+nav.grid-navbar > div.auth-buttons {
+  display: flex;
+  /* justify-content: flex-end; */
+  /* display: inline-block; */
+  justify-content: center;
+  gap: 1rem;
+  grid-column: span end;
+}
+
+button {
+  width: 100px;
+  background-color: var(--color5); 
+  border: none;
+  color: var(--color8);
+  /* padding: 5px 10px; */
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+header.hero-section{
+  
+  width: 100%;
+  height: 70vh;
+  background-image: url(https://thomasdigital.com/wp-content/uploads/2021/12/construction-websites-banner-scaled.jpg);
+  background-size: cover;
+  background-position: center 10%;
+  overflow: hidden;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: end;
+  font-size: xx-large;
+  gap: 0.7rem;
+  color: var(--color8);
+}
+
+header.hero-section >  div.content-wrapper{
+  grid-column: span 7;
+
+}
+
+section.services-section{
+  width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+   
+}
+
+section.services-section > h1{
+  /* margin: 20px; */
+  grid-column: span 12;
+  text-align: center;
+}
+
+section.services-section > div.card{
+  grid-column: span 4;
+
+}
+section.services-section > div.card > p, h3, div.img-wrapper{
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+section.services-section > div.card > div.img-wrapper{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+section.services-section> div.card > div.img-wrapper > img{
+  width: 90%;
+  height: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+.cta-button button.learn-more{
+  background: transparent;
+  color: var(--color5);
+
+}
+
+.cta-button button.learn-more:hover{
+ text-decoration: underline;
+
+}
+
+footer.grid-footer {
+ margin-top: 10px;
+  background-color: var(--color5) ;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column: span 12;
+}
+
+footer.grid-footer ul.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer.grid-footer > p{
+  grid-column: span 12;
+  text-align: center;
+  color: var(--color8);
+}
+
+footer.grid-footer ul.social-links li {
+  margin-right: 10px;
+}
+
+footer.grid-footer ul.social-links li > a > i {
+  color: var(--color8);
+  text-decoration: none;
+}
+
+footer.grid-footer ul.social-links li > a > i:hover {
+  text-decoration: underline;
+}
